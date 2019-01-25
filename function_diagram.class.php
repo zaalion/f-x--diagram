@@ -89,7 +89,7 @@
 					imagesetpixel($image,$this->x_points[$j]+$this->dimx/2,($this->y_points[$j++]*(-1))+$this->dimy/2 , $col1);			
 				}
 			imagestring($image, 2, 20, $this->dimy+10, str_replace('$x', 'x', $this->function_t), $col1);	
-			imagejpeg($image,"",100);
+			imagejpeg($image,null,100);
 			}	
 		}				
 ?>
